@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik Pixels", cursive;
+  background-color: rgb(205, 205, 205);
+}
+
+nav {
+  background-color: white;
+  /* position: sticky; */
+  top: 0px;
+  z-index: 10;
+}
+
+.navbar {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-weight: bold;
+}
+
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.ham {
+  display: none;
+}
+
+.navbar a:not(:nth-child(1)) {
+  margin-top: 10px;
+}
+
+.navbar a:nth-child(1) {
+  margin-right: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header {
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0px 0px 5em 0px;
+}
+
+.judul,
+.icon {
+  width: 40em;
+  margin-left: 3em;
+}
+
+.judul :nth-child(1) {
+  /* margin-top: 3em; */
+  max-width: 14em;
+  margin-bottom: 0;
+  margin-top: 1em;
+}
+
+.judul :nth-child(2) {
+  max-width: 39em;
+  margin-top: 2em;
+}
+
+.judul :nth-child(3) {
+  text-transform: uppercase;
+  max-width: 10em;
+  margin-top: 2em;
+}
+
+.judul-about {
+  max-width: 48em;
+}
+
+.icon {
+  width: 8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon img {
+  max-width: 4vw;
+  max-height: 4vh;
+}
+
+.project {
+  height: 25em;
+  margin: 2em 2em 2em 2em;
+  border-radius: 1em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70em;
+}
+
+.img-display {
+  width: 40em;
+  height: 20em;
+  border-radius: 1em;
+  margin-right: 0;
+}
+
+.img-display img {
+  width: 40em;
+  height: 20em;
+  border-radius: 1em;
+}
+
+.project-judul {
+  max-width: 20em;
+  margin-top: 2em;
+}
+
+.project-judul h1 {
+  margin-bottom: 0;
+}
+
+.project-author {
+  display: flex;
+  max-width: 20em;
+}
+
+.project-author h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.project-author :not(:nth-child(1)) {
+  color: rgb(200, 200, 200);
+  margin-left: 35px;
+}
+
+.project-desk {
+  max-width: 60em;
+  margin-top: 2em;
+}
+
+.project-desk h5 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.project-package {
+  display: flex;
+  width: 30em;
+}
+
+.project-package :not(:nth-child(1)) {
+  margin-left: 10px;
+}
+
+.project-package h5 {
+  padding: 10px;
+  color: rgb(0, 245, 255);
+  background-color: rgb(193, 253, 255);
+  border-radius: 0.5em;
+}
+
+.button-project {
+  font-size: 1em;
+  font-weight: bold;
+  background: white;
+  color: rgb(128, 211, 245);
+  border: 1px solid rgb(128, 211, 245);
+  border-radius: 0.5em;
+  width: 8em;
+  height: 3em;
+  margin-top: 3em;
+}
+
+/* .button {
+  width: 7em;
+} */
+
+/* button {
+  font-size: 1em;
+  font-weight: bold;
+  background: white;
+  color: rgb(128, 211, 245);
+  border: 1px solid rgb(128, 211, 245);
+  border-radius: 0.5em;
+  width: 8em;
+  height: 3em; */
+/* margin-top: 0.5em; */
+/* } */
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(128, 211, 245);
+  color: white;
+}
+
+.about-me {
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5em 0px 0px 0px;
+}
+
+/* .judul-about {
+  margin-top: 1;
+} */
+
+.judul-about,
+.icon-about {
+  width: 40em;
+  margin-left: 6em;
+}
+
+.judul-about :nth-child(1) {
+  margin-top: 3em;
+  max-width: 14em;
+  margin-bottom: 0;
+}
+
+.judul-about :nth-child(2) {
+  max-width: 39em;
+  margin-top: 1em;
+}
+
+.judul-about :nth-child(3) {
+  text-transform: uppercase;
+  max-width: 10em;
+  margin-top: 2em;
+}
+
+.judul-about {
+  max-width: 48em;
+}
+
+.icon-about {
+  width: 10em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-about img {
+  max-width: 4vw;
+  max-height: 4vh;
+}
+
+.contact-me {
+  border-radius: 0px 5em 0px 0px;
+  margin-top: 2em;
+  background-color: white;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(127, 250, 255);
+  margin-bottom: 1em;
+}
+
+.judul-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40em;
+  text-align: center;
+}
+
+.judul-contact :nth-child(1) {
+  max-width: 10em;
+  /* margin-top: 1em; */
+}
+
+.judul-contact :nth-child(2) {
+  max-width: 30em;
+  margin-top: 1em;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+}
+
+.form-contact :not(:nth-child(1)) {
+  margin-top: 2em;
+}
+
+.button-contact {
+  font-size: 1em;
+  font-weight: bold;
+  background: white;
+  color: rgb(128, 211, 245);
+  border: 1px solid rgb(128, 211, 245);
+  border-radius: 0.5em;
+  width: 100%;
+  height: 3em;
+  /* margin-top: 3em; */
+}
+
+input {
+  border: none;
+  height: 3em;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  height: 2em;
+  margin-top: 1em;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 200px 200px 0px 0px; */
+}
+
+@media only screen and (max-width: 374px) {
+  .navbar a:not(:nth-child(1)) {
+    display: none;
+  }
+
+  .navbar {
+    padding-top: 0;
+    align-items: normal;
+    justify-content: space-around;
+  }
+
+  .navbar a {
+    padding: 30px;
+  }
+
+  .navbar a:nth-child(6) {
+    display: block;
+    text-align: center;
+    width: 15vh;
+    margin-right: 0;
+  }
+
+  .navbar a:nth-child(1) {
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  .navbar.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > .navbar.responsive > .ham {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    position: relative;
+  }
+
+  .judul {
+    width: 10px;
+  }
+
+  .judul,
+  .icon {
+    width: 20em;
+    margin-left: 1em;
+  }
+
+  .judul :nth-child(1) {
+    margin-top: 2em;
+  }
+
+  .judul :nth-child(2) {
+    max-width: 18em;
+    margin-top: 0;
+  }
+
+  .judul :nth-child(3) {
+    text-transform: uppercase;
+    max-width: 10em;
+    margin-top: 0;
+  }
+
+  .icon {
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon img {
+    max-width: 10vw;
+    max-height: 10vh;
+  }
+
+  .project {
+    height: 40em;
+    display: flex;
+    margin: 2em;
+    justify-content: normal;
+    flex-direction: column;
+    border: 1px solid gray;
+  }
+
+  .project-img {
+    display: flex;
+    padding: 20px;
+    width: 16em;
+  }
+
+  .img-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+  }
+
+  .img-display img {
+    width: 14em;
+    height: 10em;
+  }
+
+  .project-judul {
+    padding-left: 20px;
+    font-size: 10px;
+  }
+
+  .project-judul h1 {
+    margin-bottom: 0;
+  }
+
+  .project-author {
+    padding-left: 20px;
+  }
+
+  .project-desk {
+    padding-left: 20px;
+  }
+
+  .project-package {
+    flex-wrap: wrap;
+    width: 15em;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .project-package :nth-child(4) {
+    margin-left: 0;
+  }
+
+  .button-project {
+    padding-left: 20px;
+  }
+
+  .about-me {
+    height: 30em;
+  }
+
+  .judul-about,
+  .icon-about {
+    width: 20em;
+    margin-left: 3em;
+  }
+
+  .judul-about {
+    max-width: 18em;
+  }
+
+  .judul-about :nth-child(2) {
+    max-width: 15em;
+  }
+
+  .icon-about {
+    width: 10em;
+    justify-content: space-between;
+  }
+
+  .icon-about img {
+    max-width: 10vw;
+    max-height: 10vh;
+  }
+
+  .contact-me {
+    height: 45em;
+  }
+
+  .judul-contact :nth-child(2) {
+    max-width: 18em;
+  }
+
+  .form-contact {
+    width: 18em;
+  }
+}
